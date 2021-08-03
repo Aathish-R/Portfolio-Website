@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header{
+    border-bottom: 2px solid #DCDCDC;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1.5rem;
+    background-color: black;
+    font-family: monospace;
+    
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #42f2f5;
+    padding-right: 80px;
+
+}
+
+.nav-item {
+    margin-left: 7rem;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #da42f5;
+}
+ .nav-link a.active
+{
+    color: #42f2f5;
+}
+
+.nav-link:hover{
+    color: #42f2f5;
+}
+
+.nav-logo { 
+    padding-left: 79px;
+    font-size: 3.1rem;
+    font-weight: 500;
+    color: #42f2f5;
+    font-style: inherit;
+    font-variant: traditional;
+    font-family: monospace;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        color:#42f2f5 ;
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+.circular--portrait {
+    
+    width: 340px;
+    height: 340px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  
+  .circular--portrait img {
+    width: 100%;
+    height: auto;
+  }
+  .ProfileImage{
+      position:fixed;
+     left:180px;
+      top: 205px;
+      
+  }
+ .info{
+     padding-left: 592px;
+     padding-top: 237px;
+     font-family: monospace;
+ }
+ .fa:hover {
+    opacity: 0.9;
+}
+.fa-whatsapp {
+    
+    color:#25D366 ;
+}
+
+.fa-twitter {
+    
+    color: #1DA1F2;
+}
+.fa-instagram {
+    
+    color:#C13584;
+}
+.fa-github {
+
+    color: 4078c0;
+}
+.fa-linkedin {
+   
+    color: #007bb5;
+}
+.fa {
+    padding: 0px;
+    width: 0px;
+    text-decoration: none;
+    margin: 0px 30px;
+}
+.AboutMe{
+    font-family:monospace;
+    padding-left: 80px;
+}
+u{
+    text-decoration-color: cyan;
+}
+.skill{
+    padding-left: 145px;
+}
+.html{  
+    width: 250px;
+    border: 1px solid #444;
+    border-radius: 5px;
+}
+.css
+{
+    
+    width: 250px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    
+}
+.javascript
+{
+    width: 250px;
+    border: 1px solid #444;
+    border-radius: 5px; 
+}
+.bootstrap 
+{
+    width: 250px;
+    border: 1px solid #444;
+    border-radius: 5px; 
+}
+.mysql{
+    width: 250px;
+    border: 1px solid #444;
+    border-radius: 5px; 
+}
+.line2{
+    padding-left: 145px;
+}
+.java{
+    width: 250px;
+    border: 1px solid #444;
+    border-radius: 5px;
+}.python{
+    width: 250px;
+    border: 1px solid #444;
+    border-radius: 5px;
+}.c{
+    width: 250px;
+    border: 1px solid #444;
+    border-radius: 5px;
+}
+.services{
+    padding-left: 145px;
+}
+.wd{
+    width: 250px;
+    border: 1px solid #444;
+    border-radius: 5px;
+}
+.cc{
+    width: 250px;
+    border: 1px solid #444;
+    border-radius: 5px;
+}
+.ue{
+    width: 250px;
+    border: 1px solid #444;
+    border-radius: 5px;
+}
+.da{
+    width: 250px;
+    border: 1px solid #444;
+    border-radius: 5px;
+}
+.contact
+{
+    padding-left: 295px;
+    padding-top: 129px;
+}
+.number{
+    width: 250px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    height: 26px;
+    
+}
+
+.w{
+    color: #25D366;
+    padding-left: 50px;padding-top: 7px;
+}
+.p{
+    color: lightskyblue;
+    padding-left: 50px;padding-top: 7px;
+}
+.e{
+    color: lightsalmon;
+    padding-left: 50px;padding-top: 7px;
+}
+.phone{
+    width: 250px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    height: 26px;
+    
+}
+.mail{
+    width: 250px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    height: 26px;
+}
+.line3{
+    padding-left: 411px;
+    padding-top: 68px;
+}
+.education{
+    padding-left: 98px;
+}
+.ul {
+    list-style: none; /* Remove default bullets */
+  }
+  
+  .ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: whitesmoke; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
